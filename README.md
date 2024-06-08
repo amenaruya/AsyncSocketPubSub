@@ -62,3 +62,74 @@ Publisher()
 ```
 
 ### Server and Client
+
+`pubsub` module can send/receive the dict objects. This module alse can do that as well.  
+Client ID is not in `pubsub`.
+
+Socket server:
+
+```python
+from AsyncSocketPubSub import runServer
+
+runServer(
+    host = "0.0.0.0",    # host IP address
+    port = 18883         # port number
+)
+
+```
+
+Socket client as publisher:
+
+```python
+from socket import socket
+from AsyncSocketPubSub.client import PubSubClient
+
+ADDRESS = "127.0.0.1" # server IP address
+PORT = 18883 # server prot
+ID = "Publisher" # client ID
+CHANNEL = "C" # channel
+
+# DATA = "hello" # str type
+DATA = {"int": 1, "str": "hello", "float": 1.3, "list": ["a", 2]} # dict type
+
+psClient = PubSubClient(
+    serverAddress = ADDRESS,
+    serverPort = PORT,
+    id = ID
+)
+
+# connect to server
+psClient.connect(socketClient = socket())
+
+# publish
+psClient.publish(
+    channel = CHANNEL,
+    payload = DATA
+)
+
+```
+
+Socket client as subscriber:
+
+```python
+from socket import socket
+from AsyncSocketPubSub.client import PubSubClient
+
+ADDRESS = "127.0.0.1" # server IP address
+PORT = 18883 # server prot
+ID = "Subscriber" # client ID
+CHANNEL = "C" # channel
+
+psClient = PubSubClient(
+    serverAddress = ADDRESS,
+    serverPort = PORT,
+    id = ID
+)
+
+# connect to server
+psClient.connect(socketClient = socket())
+
+# subscriber
+psClient.subscribe(CHANNEL)
+
+```
