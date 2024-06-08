@@ -15,7 +15,7 @@ def Publisher():
     while True:
         pubClient.publish(
             channel = CHANNEL,
-            payload = "hello?"
+            payload = "hello"
         )
         time.sleep(3)
 
