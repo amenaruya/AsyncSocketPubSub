@@ -63,7 +63,7 @@ Publisher()
 
 ### Server and Client
 
-`pubsub` module can send/receive the dict objects. This module alse can do that as well.  
+`pubsub` module can send/receive the dict objects. This module also can do that as well.  
 
 Socket server:
 
@@ -83,10 +83,10 @@ Socket client as publisher:
 from socket import socket
 from AsyncSocketPubSub.client import PubSubClient
 
-ADDRESS = "127.0.0.1" # server IP address
-PORT = 18883 # server prot
-ID = "Publisher" # client ID
-CHANNEL = "C" # channel
+ADDRESS = "127.0.0.1"   # server IP address
+PORT = 18883            # server prot
+ID = "Publisher"        # client ID
+CHANNEL = "C"           # channel
 
 # DATA = "hello" # str type
 DATA = {"int": 1, "str": "hello", "float": 1.3, "list": ["a", 2]} # dict type
@@ -114,10 +114,10 @@ Socket client as subscriber:
 from socket import socket
 from AsyncSocketPubSub.client import PubSubClient
 
-ADDRESS = "127.0.0.1" # server IP address
-PORT = 18883 # server prot
-ID = "Subscriber" # client ID
-CHANNEL = "C" # channel
+ADDRESS = "127.0.0.1"   # server IP address
+PORT = 18883            # server prot
+ID = "Subscriber"       # client ID
+CHANNEL = "C"           # channel
 
 psClient = PubSubClient(
     serverAddress = ADDRESS,
