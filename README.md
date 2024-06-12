@@ -64,7 +64,6 @@ Publisher()
 ### Server and Client
 
 `pubsub` module can send/receive the dict objects. This module alse can do that as well.  
-Client ID is not in `pubsub`.
 
 Socket server:
 
