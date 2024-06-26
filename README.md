@@ -84,7 +84,7 @@ from socket import socket
 from AsyncSocketPubSub.client import PubSubClient
 
 ADDRESS = "127.0.0.1"   # server IP address
-PORT = 18883            # server prot
+PORT = 18883            # server port
 ID = "Publisher"        # client ID
 CHANNEL = "C"           # channel
 
@@ -115,7 +115,7 @@ from socket import socket
 from AsyncSocketPubSub.client import PubSubClient
 
 ADDRESS = "127.0.0.1"   # server IP address
-PORT = 18883            # server prot
+PORT = 18883            # server port
 ID = "Subscriber"       # client ID
 CHANNEL = "C"           # channel
 
