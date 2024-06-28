@@ -22,7 +22,7 @@ jobs:
 
     environment:
       name: relese
-      url: https://pypi.org/p/AsyncSocketPubSub
+      #url: https://pypi.org/p/AsyncSocketPubSub
 
     permissions:
       id-token: write
