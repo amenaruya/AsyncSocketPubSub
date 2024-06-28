@@ -16,11 +16,14 @@ permissions:
   contents: read
 
 jobs:
-  deploy:
+  pypi-publish:
 
     runs-on: ubuntu-latest
 
-    environment: release
+    environment:
+      name: relese
+      url: https://pypi.org/p/AsyncSocketPubSub
+
     permissions:
       id-token: write
 
