@@ -17,8 +17,8 @@ on:
     tags:
       - '*'
 
-#permissions:
-  #contents: read
+permissions:
+  contents: read
 
 jobs:
 
@@ -49,15 +49,13 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    #environment:
-      #name: relese
-      #url: https://pypi.org/p/AsyncSocketPubSub
-
     needs:
       - release-build
     permissions:
       id-token: write
 
+    environment:
+      name: relese
 
     steps:
       - name: Retrieve release distributions
