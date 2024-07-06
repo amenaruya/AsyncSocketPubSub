@@ -4,6 +4,8 @@ This module provides Pub/Sub based communication using socket communication.
 
 github: <https://github.com/amenaruya/AsyncSocketPubSub>
 
+pypi: <https://pypi.org/project/AsyncSocketPubSub/>
+
 ## Requirement
 
 This module requires the [`pubsub`](https://github.com/nehz/pubsub) module:
