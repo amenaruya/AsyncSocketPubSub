@@ -149,4 +149,4 @@ def runServer(host: str, port: int, bufferSize: int = None):
         asyncio.run(main(host = host, port = port))
     finally:
         print("Server: exitting")
-        exit(0)
+
