@@ -55,7 +55,7 @@ jobs:
       id-token: write
 
     environment:
-      name: relese
+      name: pypi
 
     steps:
       - name: Retrieve release distributions
