@@ -2,6 +2,8 @@
 
 This module provides Pub/Sub based communication using socket communication.
 
+github: <https://github.com/amenaruya/AsyncSocketPubSub>
+
 ## Requirement
 
 This module requires the [`pubsub`](https://github.com/nehz/pubsub) module:
@@ -12,16 +14,11 @@ pip install pubsub
 
 ## Usage
 
-directory structure:
+install:
 
 ```shell
-┋
-┣ AsyncSocketPubSub
-┣ xxx.py
-┋
+pip install AsyncSocketPubSub
 ```
-
-see [examples](https://github.com/amenaruya/AsyncSocketPubSub/tree/main/example)
 
 ### Simple using
 
